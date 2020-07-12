@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Họ và tên:  {{fullName}}</h1>
+        <h1>Tên sản phẩm:  {{title}}</h1>
+        <h2>Giá sản phẩm: {{ say('HAHHA') }}</h2>
+        <h3>Link sản phẩm: <a v-bind:href="url" v-bind:target="target">{{url}}</a></h3>
+        <h3>Số lượng mua: {{ couter }}</h3>
+        <button v-on:click="add">Thêm 1 sản phẩm</button>
+        <button v-on:click="remove">Giảm 1 sản phẩm</button>
+        <input v-model="fullName" type="text" name="fullName" placeholder="Nhập họ và tên">
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
